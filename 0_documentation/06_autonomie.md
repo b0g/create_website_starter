@@ -1,6 +1,6 @@
-# Commande 5 — Autonomie : mettre à jour et revenir en arrière
+# Commande 6 — Autonomie : mettre à jour et revenir en arrière
 
-> Étape 5 : vérifier que le participant peut mettre à jour son site **seul**, avec ou sans IA.
+> Étape 6 : vérifier que le participant peut mettre à jour son site **seul**, avec ou sans IA.
 > Principe : c'est le test ultime de la promesse pédagogique. Si on ne peut pas mettre à jour seul, l'atelier a échoué.
 
 ## Prérequis

@@ -1,11 +1,11 @@
-# Commande 1 — Préparer le dossier contenu/
+# Commande 2 — Préparer le dossier 2_contenu/
 
-> Étape 1 : à partir de tout ce qui est dans `import/` (en vrac), produire un dossier `contenu/` complet, structuré, prêt à alimenter le site.
+> Étape 2 : à partir de tout ce qui est dans `1_import/` (en vrac), produire un dossier `2_contenu/` complet, structuré, prêt à alimenter le site.
 > Principe : **le quoi avant le comment**. L'IA lit, propose, questionne ; l'utilisateur valide ; l'IA exécute. Un seul cycle, pas de va-et-vient.
 
 ## Objectif
 
-Transformer le vrac de `import/` en dossier `contenu/` :
+Transformer le vrac de `1_import/` en dossier `2_contenu/` :
 - **complet** (rien d'important oublié)
 - **structuré** (mêmes règles pour tout le monde)
 - **clair** (l'IA n'aura plus aucune question métier à poser au moment de produire le site)
@@ -14,19 +14,19 @@ L'utilisateur ne trie pas à la main. L'IA ne range pas dans le vide. On fait un
 
 ## Quand lancer cette commande
 
-Dès que `import/` contient la matière en vrac (images, textes, PDFs, liens).
+Dès que `1_import/` contient la matière en vrac (images, textes, PDFs, liens).
 
 ## La commande (à donner à l'IA)
 
 ```
-Je veux préparer le dossier « contenu/ » de mon site à partir de tout ce qui est
-dans « import/ ».
+Je veux préparer le dossier « 2_contenu/ » de mon site à partir de tout ce qui est
+dans « 1_import/ ».
 
 Avant de créer ou déplacer quoi que ce soit, fais-moi valider en 3 temps.
 
 ÉTAPE A — Lecture + dispatch proposé
-Lis tout ce qui est dans import/. Avant de proposer le dispatch, détermine la
-structure de contenu/ en posant les bonnes questions :
+Lis tout ce qui est dans 1_import/. Avant de proposer le dispatch, détermine la
+structure de 2_contenu/ en posant les bonnes questions :
 
 1. DÉTECTION DU TYPE DE SITE (pose-moi la question, ne suppose pas) :
    - Un seul projet avec des composantes (ateliers, prestations, formats...) ?
@@ -44,7 +44,7 @@ structure de contenu/ en posant les bonnes questions :
 3. POUR CHAQUE FICHIER RESTANT :
    - Identifie ce que c'est (texte de présentation, photo, fiche technique,
      lien vidéo, contacts, atelier, dossier poétique...)
-   - Propose où il doit aller dans contenu/ selon la structure détectée.
+   - Propose où il doit aller dans 2_contenu/ selon la structure détectée.
    - Si un fichier est ambigu, marque-le « à clarifier ».
 
 ÉTAPE B — Questions de complétion
@@ -69,7 +69,7 @@ Pose-moi les questions une par une, pas toutes d'un coup.
 Une fois mes réponses validées :
 1. Liste-moi exactement ce que tu vas faire (déplacer X vers Y, créer Z, renommer W).
 2. Je valide le plan.
-3. Tu exécutes : tu déplaces les fichiers de import/ vers contenu/, tu crées
+3. Tu exécutes : tu déplaces les fichiers de 1_import/ vers 2_contenu/, tu crées
    les sous-dossiers nécessaires, tu écartes les images floues.
 4. Tu ne supprimes rien, tu ne crées rien, tu ne complètes pas mes textes.
 
@@ -86,8 +86,8 @@ Tu ne touches pas encore au site.
 | Livrable | Où |
 |---|---|
 | Plan de dispatch + questions de complétion | à l'écran, pour validation |
-| Dossier `contenu/` complet et structuré | `contenu/` |
-| Dossier `import/` vidé ou archivé | `import/` |
+| Dossier `2_contenu/` complet et structuré | `2_contenu/` |
+| Dossier `1_import/` vidé ou archivé | `1_import/` |
 | Bilan de complétion | à l'écran |
 
 ## Critères de réussite
@@ -96,16 +96,16 @@ Tu ne touches pas encore au site.
 - Un texte de présentation en 2 tailles (court pour accueil, long pour À propos)
 - Les images floues sont écartées, pas conservées par politesse
 - Aucune question métier laissée ouverte pour l'étape production
-- `import/` est vide à la fin
+- `1_import/` est vide à la fin
 
 ## Pièges
 - L'IA qui génère du contenu à la place de l'utilisateur : non, elle ne fait que ranger et questionner.
-- L'IA qui suppose la structure (projects/ vs ateliers/) sans demander : non, elle pose la question et propose selon ce qu'elle voit dans import/.
+- L'IA qui suppose la structure (projects/ vs ateliers/) sans demander : non, elle pose la question et propose selon ce qu'elle voit dans 1_import/.
 - Conserver des fichiers techniques internes (serveurs, sync, logbook) : non, on les écarte automatiquement, le site est public.
 - Garder un doublon "au cas où" : non, on garde le plus complet et on archive l'autre.
 - Les images non nommées (`IMG_1234.jpg`) : demander à l'utilisateur ce qu'elles représentent avant de les ranger.
 - Les PDFs sans contexte : demander s'ils sont publics (à mettre en ligne) ou privés (à garder pour info).
 - Conserver des images floues "au cas où" : non, on les écarte maintenant.
 - Garder un projet "en attendant" : si on n'a pas la matière, on ne le met pas sur le site.
-- **Images lourdes (> 25 MB)** : refusées par Cloudflare Pages. Redimensionner à max 2000 px de large + compresser en JPG/WebP qualité 80 avant de ranger dans contenu/medias/. Objectif : < 1 MB par photo pour que le repo GitHub reste léger.
+- **Images lourdes (> 25 MB)** : refusées par Cloudflare Pages. Redimensionner à max 2000 px de large + compresser en JPG/WebP qualité 80 avant de ranger dans 2_contenu/medias/. Objectif : < 1 MB par photo pour que le repo GitHub reste léger.
 - Trop de questions d'un coup : l'utilisateur se noie. On pose par bloc, on valide, on continue.

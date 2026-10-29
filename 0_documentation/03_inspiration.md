@@ -1,11 +1,11 @@
-# Commande 2 — Inspiration et choix d'un template
+# Commande 3 — Inspiration et choix d'un template
 
-> Étape 2 : remplir `inspiration/` en regardant ce qui existe, puis choisir **un seul template** à télécharger pour la production.
+> Étape 3 : remplir `3_inspiration/` en regardant ce qui existe, puis choisir **un seul template** à télécharger pour la production.
 > Principe : on n'invente pas le design. On regarde, on note ce qui nous parle, on retient 1 template.
 
 ## Objectif
 
-Construire un dossier `inspiration/` qui contient :
+Construire un dossier `3_inspiration/` qui contient :
 - des **liens vers des sites exemples** (artistes, intermittents, métier similaire)
 - une **fiche par site** remplie avec la grille de lecture
 - **un template HTML** téléchargé (un seul) + sa fiche
@@ -25,7 +25,7 @@ On regarde large, on note serré, on télécharge un seul. Le participant appren
 
 ## Quand lancer cette commande
 
-Après la commande 1 (contenu prêt), avant la production (commande 3).
+Après la commande 2 (contenu prêt), avant la production (commande 4).
 
 ## Sources pour fouiller
 
@@ -62,26 +62,26 @@ Pour les sites exemples (pas templates) : même grille, en ajoutant "Est-ce que 
 ## La commande (à donner à l'IA)
 
 ```
-On va remplir le dossier « inspiration/ ».
+On va remplir le dossier « 3_inspiration/ ».
 
 Étape A — Sites exemples
-À partir de mon métier et de mon contenu (dans contenu/), propose-moi 5 à 10 sites
+À partir de mon métier et de mon contenu (dans 2_contenu/), propose-moi 5 à 10 sites
 d'artistes/intermittents dont le style pourrait me correspondre. Pour chaque site,
 dis-moi pourquoi tu le proposes. Je les regarde et je te dis lesquels je garde.
 
-Pour chaque site gardé, crée une fiche dans inspiration/sites/<nom-du-site>.md
+Pour chaque site gardé, crée une fiche dans 3_inspiration/sites/<nom-du-site>.md
 avec la grille de lecture remplie.
 
 Étape B — Templates HTML
 Je vais fouiller sur les banques de templates (Aura.build, HTML5UP, Freefolio, FreeHTML5).
 Je te donne les 2-3 templates qui me plaisent le plus. Pour chacun, tu crées une
-fiche dans inspiration/templates/<nom>.md avec la grille de lecture remplie.
+fiche dans 3_inspiration/templates/<nom>.md avec la grille de lecture remplie.
 
 Je choisis ensuite UN seul template à télécharger. Tu le télécharges dans
-inspiration/templates/<nom>/ (fichiers HTML/CSS).
+3_inspiration/templates/<nom>/ (fichiers HTML/CSS).
 
 Étape C — Synthèse
-À la fin, tu rédiges inspiration/synthese.md :
+À la fin, tu rédiges 3_inspiration/synthese.md :
 - Ce que je veux (ton, couleurs, typo, disposition, sections...)
 - Ce que je ne veux pas
 - Le template retenu et pourquoi
@@ -91,10 +91,10 @@ inspiration/templates/<nom>/ (fichiers HTML/CSS).
 
 | Livrable | Où |
 |---|---|
-| Fiches sites exemples (grille remplie) | `inspiration/sites/<nom>.md` |
-| Fiches templates (grille remplie) | `inspiration/templates/<nom>.md` |
-| 1 template téléchargé | `inspiration/templates/<nom>/` (fichiers HTML/CSS) |
-| Synthèse "ce que je veux" | `inspiration/synthese.md` |
+| Fiches sites exemples (grille remplie) | `3_inspiration/sites/<nom>.md` |
+| Fiches templates (grille remplie) | `3_inspiration/templates/<nom>.md` |
+| 1 template téléchargé | `3_inspiration/templates/<nom>/` (fichiers HTML/CSS) |
+| Synthèse "ce que je veux" | `3_inspiration/synthese.md` |
 
 ## Critères de réussite
 - Au moins 3 fiches sites complétées avec la grille

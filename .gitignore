@@ -1,11 +1,11 @@
 # Contenu privé — ne part jamais sur GitHub
-contenu/*
-!contenu/README.md
-import/*
-!import/README.md
-!import/.gitkeep
-inspiration/*
-!inspiration/README.md
+2_contenu/*
+!2_contenu/README.md
+1_import/*
+!1_import/README.md
+!1_import/.gitkeep
+3_inspiration/*
+!3_inspiration/README.md
 
 # Fichiers système
 .DS_Store

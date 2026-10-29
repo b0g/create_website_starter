@@ -1,26 +1,26 @@
-# Commande 4 — Déploiement sur GitHub + Cloudflare Pages
+# Commande 5 — Déploiement sur GitHub + Cloudflare Pages
 
-> Étape 4 : mettre le site en ligne via GitHub + Cloudflare Pages, avec un nom de domaine propre.
+> Étape 5 : mettre le site en ligne via GitHub + Cloudflare Pages, avec un nom de domaine propre.
 > Principe : le site vit dans un repo GitHub, Cloudflare Pages le déploie automatiquement à chaque commit. Pas de serveur à maintenir.
 
 ## Objectif
 
-1. Créer un repo GitHub contenant le site (depuis la version finale de `production/`).
+1. Créer un repo GitHub contenant le site (depuis la version finale de `4_production/`).
 2. Brancher Cloudflare Pages sur ce repo → déploiement automatique.
 3. Brancher un nom de domaine propre.
 
 ## Quand lancer cette commande
 
-Après la commande 3, quand une version de `production/` est validée comme "version à mettre en ligne".
+Après la commande 4, quand une version de `4_production/` est validée comme "version à mettre en ligne".
 
 ## La commande (à donner à l'IA)
 
 ```
-Je veux mettre en ligne la version <VX> de production/.
+Je veux mettre en ligne la version <VX> de 4_production/.
 
 Étape A — Préparation du repo
 1. Liste-moi exactement les fichiers/dossiers à envoyer sur GitHub (et ceux à
-   exclure : contenu/, import/, inspiration/, versions précédentes...).
+   exclure : 2_contenu/, 1_import/, 3_inspiration/, versions précédentes...).
 2. Crée un .gitignore à la racine du repo pour exclure ce qui n'est pas public.
 3. Valide avec moi la structure du repo GitHub avant de pousser.
 
@@ -62,9 +62,9 @@ sur GitHub et Cloudflare, tu me guides.
 - **Compte GitHub** : à créer avant cette étape (gratuit).
 
 ## Pièges
-- Pousser `contenu/` ou `import/` sur GitHub : non, c'est privé. Le `.gitignore` les exclut.
+- Pousser `2_contenu/` ou `1_import/` sur GitHub : non, c'est privé. Le `.gitignore` les exclut.
 - Oublier de dire à Cloudflare Pages "pas de build" : on est en HTML pur, build = aucun, output = `/`.
 - **Choisir Workers au lieu de Pages** dans l'interface Cloudflare : Pages est branché sur Git (auto-déploiement à chaque push), Workers non (déploiement manuel via wrangler). Vérifier l'URL : `*.pages.dev` = Pages (bon), `*.workers.dev` = Workers (pas ce qu'on veut).
-- **Images > 25 MB** : refusées par Cloudflare Pages. Compresser avant le push (voir commande 01).
+- **Images > 25 MB** : refusées par Cloudflare Pages. Compresser avant le push (voir commande 2).
 - Attendre la propagation DNS (peut prendre jusqu'à 24-48h, souvent quelques minutes) : on vérifie avant de dire "c'est en ligne".
-- Supprimer les versions précédentes de production/ du repo : on garde l'historique via git, pas besoin de pousser V1, V2... sur GitHub.
+- Supprimer les versions précédentes de 4_production/ du repo : on garde l'historique via git, pas besoin de pousser V1, V2... sur GitHub.
